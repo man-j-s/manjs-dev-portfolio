@@ -2,7 +2,7 @@ import "./Navbar.css"; //this Import tells JS that where to import .css from
 
 function Navbar(){
    return(
-      <nav>
+      <nav className="navbar">
          Man_j_S_S
          <ul>
             <li><a href="#hero">Home</a></li> {/*This is hero section*/}

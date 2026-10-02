@@ -1,0 +1,21 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+    background-color: khaki;
+    align-items: center;
+    font-weight: bold;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar a{
+    text-decoration: none;
+}
