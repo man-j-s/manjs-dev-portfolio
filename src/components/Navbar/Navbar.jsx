@@ -5,12 +5,13 @@ function Navbar(){
       <nav>
          Man_j_S_S
          <ul>
-            <li><a href="#About_Me">About Me</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Download_Resume">Download Resume(PDF)</a></li>
-            <li><a href="#Blogs">Blogs</a></li>
-            <li><a href="#Contact_me">Contact Me</a></li>
+            <li><a href="#hero">Home</a></li> {/*This is hero section*/}
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#download-resume">Download Resume(PDF)</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
          </ul>
       </nav>
    );
