@@ -1,8 +1,8 @@
 .navbar{
     display: flex;
     justify-content: space-between;
-    color: grey;
-    background-color: khaki;
+    color: #ccd6f6;
+    background-color: #0a192f;
     align-items: center;
     font-weight: bold;
 }
@@ -18,4 +18,9 @@
 
 .navbar a{
     text-decoration: none;
+    color: #ccd6f6;
+}
+
+.navbar a:hover{
+    color: #64ffda;
 }
