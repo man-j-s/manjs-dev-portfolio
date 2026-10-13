@@ -1,10 +1,15 @@
 import "./Navbar.css"; //this Import tells JS that where to import .css from
+import { useState } from "react";
 
 function Navbar(){
+   const [isOpen, setIsOpen] = useState(false)
    return(
       <nav className="navbar">
-         Man_j_S_S
-         <ul>
+         <div className="navbar-top">
+            Man_j_S_S
+      <button className="hamburger" aria-label="Toggle menu" onClick = {() => setIsOpen(!isOpen)}>☰</button>
+         </div>
+        <ul className={isOpen ? "nav-links open" : "nav-links"}>
             <li><a href="#hero">Home</a></li> {/*This is hero section*/}
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#skills">Skills</a></li>
