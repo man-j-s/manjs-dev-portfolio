@@ -1,0 +1,13 @@
+import "./Hero.css";
+
+function Hero(){
+    return(
+        <section className="hero">
+            <h1>Manj Singh</h1>
+            <h2>From the world of Finance, transition to the world of Tech, driven by curiosity</h2>
+            <a href="#projects">View my Work</a>
+        </section>
+    );
+}
+
+export default Hero;
