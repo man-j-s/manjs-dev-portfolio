@@ -1,4 +1,20 @@
-:root {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #0a192f;
+  color: #ccd6f6;
+}
+
+#root{
+  min-height: 100dvh;
+}
+
+/* :root {
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
@@ -108,4 +124,4 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
-}
+} */
