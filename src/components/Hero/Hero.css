@@ -2,8 +2,12 @@
     display:flex;
     place-items: center;
     min-height: 100dvh;
-    background-color: #0a192f;
+    /* background-color: #0a192f; */
+    background-color: #112240;
     color: #ccd6f6;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
 }
 
 .hero a{
@@ -20,4 +24,13 @@
     background-color: #64ffda;
     color: #0a192f;
     box-shadow: 0 0 15px #64ffda;
+}
+
+.hero h1{
+    font-size: 60px;
+}
+
+.hero h2{
+    font-size: 25px;
+    font-style: italic;
 }
