@@ -1,0 +1,9 @@
+.about{
+    padding: 80px 32px;
+    min-height: 100dvh;
+    place-items: center;
+}
+
+.about h2{
+        color: #64ffda;
+}
