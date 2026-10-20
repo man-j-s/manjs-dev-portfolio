@@ -1,16 +1,23 @@
 import "./Navbar.css"; //this Import tells JS that where to import .css from
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Navbar(){
    const [isOpen, setIsOpen] = useState(false)
+   const[scrolled, setScrolled] = useState(false);
+   useEffect(() => {
+      const handleScroll = () => {
+         setScrolled(window.scrollY > 50);
+      };
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+   },[]);
    return(
-      <nav className="navbar">
+      <nav className={scrolled ? "navbar scrolled" : "navbar"}>
          <div className="navbar-top">
-            Man_j_S_S
+            <a href="#hero" title="Home">Man_J_S_S</a>
       <button className="hamburger" aria-label="Toggle menu" onClick = {() => setIsOpen(!isOpen)}>☰</button>
          </div>
         <ul className={isOpen ? "nav-links open" : "nav-links"}>
-            <li><a href="#hero">Home</a></li> {/*This is hero section*/}
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>

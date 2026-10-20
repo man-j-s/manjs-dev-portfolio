@@ -3,12 +3,25 @@
     justify-content: space-between;
     color: #ccd6f6;
     background-color: #0a192f;
-    /* background-color: #112240; */
     align-items: center;
     font-weight: bold;
     padding: 16px 32px;
     position: sticky; 
     top: 0;
+    z-index: 100; 
+}
+
+.navbar-top a{
+    color: #64ffda;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.navbar.scrolled{
+    padding: 8px 32px;
+    transition: padding 0.3s ease;
 }
 
 .navbar ul{
