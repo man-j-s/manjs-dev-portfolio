@@ -4,6 +4,7 @@ function Skills(){
     return(
         <section id="skills" className="skills">
             <h2>Skills</h2>
+            <div className="skills-container">
             <div>
                 <h3>Programming Languages & Frameworks</h3>
                 <ul>
@@ -22,7 +23,8 @@ function Skills(){
                     <li>VS Code</li>
                     <li>Slack</li>
                 </ul>
-            </div>          
+            </div>
+            </div>         
         </section>
     );
 }

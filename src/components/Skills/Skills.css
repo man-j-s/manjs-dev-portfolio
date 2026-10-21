@@ -1,0 +1,27 @@
+.skills{
+    min-height: 100dvh;
+    padding: 80px 32px;
+}
+
+.skills h2{
+    color: #64ffda;
+}
+
+.skills-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.skills-container::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #64ffda;
+    transform: translate(-50%);
+}
