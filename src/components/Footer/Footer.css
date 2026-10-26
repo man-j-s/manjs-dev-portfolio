@@ -1,0 +1,24 @@
+.footer{
+    background-color: #0a192f;
+    color: #ccd6f6;
+    display: flex;
+    padding: 16px 32px;
+    justify-content: space-between;
+}
+
+.footer .footbar{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #ccd6f6;
+    font-weight: bold;
+
+}
+
+.footer .footbar a:hover{
+    color: #64ffda;
+}
