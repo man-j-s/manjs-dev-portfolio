@@ -7,8 +7,8 @@ function Footer(){
         <footer className="footer">
             <p>&copy; 2026 ManJ Singh. All rights reserved.</p>
             <ul className="footbar">
-                <li><a href="https://www.linkedin.com/in/man-j-s/"><SlSocialLinkedin /> LinkedIn</a></li>
-                <li><a href="https://github.com/man-j-s/"><SiGithub /> Github</a></li>
+                <li><a href="https://www.linkedin.com/in/man-j-s/" target="_blank" rel="noopener noreferrer"><SlSocialLinkedin /> LinkedIn</a></li>
+                <li><a href="https://github.com/man-j-s/" target="_blank" rel="noopener noreferrer"><SiGithub /> Github</a></li>
             </ul>
         </footer>
     );

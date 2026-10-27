@@ -22,7 +22,7 @@ function Navbar(){
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#download-resume">Download Resume(PDF)</a></li>
-            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#blogs" target="_blank" rel="noopener noreferrer">Blogs</a></li>
             <li><a href="#contact-me">Contact Me</a></li>
          </ul>
       </nav>
