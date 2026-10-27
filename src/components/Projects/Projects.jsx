@@ -17,7 +17,7 @@ function Projects(){
                     <li><SiPostgresql /> PostGresSQL</li>
                     <li><SiPostman /> Postman</li>
                 </ul>
-                <a href="https://github.com/man-j-s/skiptracer"><SiGithub /> Project Code</a>
+                <a href="https://github.com/man-j-s/skiptracer" target="_blank" rel="noopener noreferrer"><SiGithub /> Project Code</a>
                 <span> In progress</span>
             </article>
         </section>
