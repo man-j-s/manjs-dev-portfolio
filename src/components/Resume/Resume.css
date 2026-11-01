@@ -1,0 +1,41 @@
+.resume{
+    padding: 80px 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.resume h2{
+    text-align: left;
+    margin-bottom: 10px;
+    color: #64ffda;
+}
+
+.resume p{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.resume a{
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #64ffda;
+    border-radius: 5px;
+    color: #64ffda;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+
+}
+
+.resume a:hover{
+    color: #0a192f;
+    background-color: #64ffda;
+    box-shadow: 0 0 15px #64ffda;
+}
+
+@media screen and (max-width: 768px) {
+    .resume{
+        padding: 40px 40px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }    
+}
