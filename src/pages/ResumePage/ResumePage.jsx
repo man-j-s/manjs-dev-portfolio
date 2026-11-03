@@ -1,4 +1,4 @@
-import resume from "../../components/Resume/Resume";
+import Resume from "../../components/Resume/Resume";
 
 function ResumePage(){
     return(

@@ -1,5 +1,4 @@
 import "./Resume.css";
-import { Link } from "react-router";
 
 function Resume(){
     return(
