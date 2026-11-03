@@ -1,6 +1,8 @@
+import resume from "../../components/Resume/Resume";
+
 function ResumePage(){
     return(
-        <h1>TEST</h1>
+        <Resume />
     );
 }
 

@@ -1,5 +1,6 @@
 import "./Navbar.css"; //this Import tells JS that where to import .css from
 import { useEffect, useState } from "react";
+import { Link } from "react-router";
 
 function Navbar(){
    const [isOpen, setIsOpen] = useState(false)
@@ -14,16 +15,16 @@ function Navbar(){
    return(
       <nav className={scrolled ? "navbar scrolled" : "navbar"}>
          <div className="navbar-top">
-            <a href="#hero" title="Home">Man_J_S_S</a>
+            <a href="/#hero" title="Home">Man_J_S_S</a>
       <button className="hamburger" aria-label="Toggle menu" onClick = {() => setIsOpen(!isOpen)}>☰</button>
          </div>
         <ul className={isOpen ? "nav-links open" : "nav-links"}>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#download-resume">Download Resume(PDF)</a></li>
-            <li><a href="#blogs" target="_blank" rel="noopener noreferrer">Blogs</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
+            <li><a href="/#about-me">About Me</a></li>
+            <li><a href="/#skills">Skills</a></li>
+            <li><a href="/#projects">Projects</a></li>
+            <li><Link to="/resume">Resume</Link></li>
+            <li><a href="/#blogs">Blogs</a></li>
+            <li><a href="/#contact-me">Contact Me</a></li>
          </ul>
       </nav>
    );
