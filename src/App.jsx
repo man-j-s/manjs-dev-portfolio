@@ -1,22 +1,19 @@
 import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
-import About from "./components/About/About";
-import Skills from "./components/Skills/Skills";
-import Projects from "./components/Projects/Projects";
-import Resume from "./components/Resume/Resume";
-import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import { Routes, Route } from "react-router";
+import Home from "./pages/Home/Home";
+import ResumePage from "./pages/ResumePage/ResumePage";
 
 function App(){
     return(
-        <div>
+        <div className="app">
             <Navbar/>
-            <Hero/>
-            <About/>
-            <Skills/>
-            <Projects/>
-            <Resume/>
-            <Contact/>
+            <main>
+            <Routes>
+                <Route path="/" element={<Home />}/>
+                <Route path="/resume" element={<ResumePage />}/>
+            </Routes>
+            </main>
             <Footer/>
         </div>
     )
