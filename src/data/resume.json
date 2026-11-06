@@ -1,0 +1,69 @@
+{
+  "basics": {
+    "name": "Manj Singh",
+    "preferredName": "Mj",
+    "email": "macsngh99@gmail.com",
+    "location": "Toronto, ON",
+    "relocation": "Open to relocation and US remote",
+    "website": null,
+    "profiles": {
+      "github": "https://github.com/man-j-s",
+      "linkedin": "https://www.linkedin.com/in/man-j-s/"
+    }
+  },
+  "headline": {
+    "primary": "Backend Developer",
+    "variants": ["Python Developer", "Software Developer"],
+    "tagline": "Python / FastAPI · Building toward AI/ML"
+  },
+  "summary": "Backend developer with an IT degree and 5 years in debt collections operations, including leading a team of 10-12 collectors. Building Python and FastAPI APIs informed by hands-on skip-tracing and recovery work. Seeking a backend developer role in Toronto; open to relocation and US remote.",
+  "work": [
+    {
+      "company": "FDR Ltd.",
+      "title": "Team Lead, Collections",
+      "location": null,
+      "start": "2021-09",
+      "end": null,
+      "current": true,
+      "highlights": [
+        "Collect $100K+ CAD per month in outstanding debt through outbound calls to debtors",
+        "Lead a team of 10-12 collectors: manage performance, train and onboard new hires",
+        "Design collection strategies based on market conditions to meet collection goals",
+        "Conduct skip tracing from publicly available data, storing results in a reusable format and analyzing the data",
+        "Coordinate with law firms, litigators, and lenders on account recovery",
+        "Prepare and maintain collections reports"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "I.K. Gujral Punjab Technical University (formerly Punjab Technical University)",
+      "location": "India",
+      "degree": "Bachelor’s Degree",
+      "field": "Information Technology",
+      "end": "2016"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Skiptracer",
+      "subtitle": "Skip-tracing API for debt collection",
+      "status": "In progress",
+      "link": "https://github.com/man-j-s/skiptracer",
+      "stack": ["Python", "FastAPI", "PostgreSQL", "SQLAlchemy", "Pydantic", "JWT"],
+      "highlights": [
+        "Building a FastAPI backend that lets collectors search for debtors across Canadian public platforms, based on my skip-tracing work in collections",
+        "Implemented JWT authentication (register and login) and protected routes using FastAPI dependency injection",
+        "Built search endpoints with Pydantic validation and PostgreSQL persistence through SQLAlchemy; search history and lookups are scoped to the authenticated user",
+        "In progress: Google Custom Search integration, email pattern inference with MX verification, and confidence scoring"
+      ]
+    }
+  ],
+  "skills": {
+    "languages": ["Python", "SQL", "JavaScript"],
+    "backend": ["FastAPI", "REST APIs", "JWT Authentication", "PostgreSQL", "SQLAlchemy"],
+    "frontend": ["HTML", "CSS", "React"],
+    "tools": ["Git", "GitHub", "Postman", "VS Code"],
+    "learning": []
+  }
+}
