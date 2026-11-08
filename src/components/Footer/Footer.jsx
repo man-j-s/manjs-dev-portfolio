@@ -1,4 +1,4 @@
-import "./Footer.css"
+import "./Footer.css";
 import { SiGithub } from "react-icons/si";
 import { SlSocialLinkedin } from "react-icons/sl";
 
