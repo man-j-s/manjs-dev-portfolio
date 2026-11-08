@@ -46,7 +46,7 @@
   ],
   "projects": [
     {
-      "name": "Skiptracer",
+      "name": "Skip-trace Analysis tool",
       "subtitle": "Skip-tracing API for debt collection",
       "status": "In progress",
       "link": "https://github.com/man-j-s/skiptracer",
