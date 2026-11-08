@@ -1,3 +1,57 @@
+.resume-page{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px;
+    line-height: 1.6;
+}
+
+.resume-page h1{
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+}
+
+.resume-page .socialLinks{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin: 16px 0 32px;
+}
+
+.resume-page section{
+    margin-bottom: 32px;
+}
+
+.resume-page h2{
+    color: #64ffda;
+    border-bottom: 2px solid #64ffda;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
 .resume-page h3 { 
     text-transform: capitalize; 
+}
+
+.resume-page article{
+    margin-bottom: 20px;
+}
+
+.resume-page li{
+    margin-bottom: 6px;
+}
+
+.resume-page a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.resume-page a:hover{
+    color: #64ffda;
+}
+
+@media print {
+  .navbar, .footer, .resume { display: none; }
+  body { background: white; color: black; }
+  .resume-page h1, .resume-page h2, .resume-page h3 { color: black; }
+  .resume-page a { color: black; }
 }
