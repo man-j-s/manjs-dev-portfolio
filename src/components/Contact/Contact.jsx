@@ -1,24 +1,47 @@
 import "./Contact.css";
+import { useState } from "react";
 
-function Contact(){
-    return(
+
+function Contact() {
+    const [result, setResult] = useState("");
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending...");
+        const formData = new FormData(event.target);
+        formData.append("access_key", "020b1262-a55a-4759-a587-b3198e67feac");
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData,
+        });
+        const data = await response.json();
+        if (data.success) {
+            setResult("Message sent. Thank you!");
+            event.target.reset();
+        } else {
+            setResult(data.message);
+        }
+    };
+    return (
         <section id="contact-me" className="contact">
             <h2>Contact me</h2>
-            <form>
-                <label htmlFor="name">
-                    <input type="text" id="name" placeholder="Your Name"/>
+            <form onSubmit={handleSubmit}>
+                <label htmlFor="name" aria-label="name">
+                    <input type="text" id="name" placeholder="Your Name" name="name" required />
                 </label>
-                <label htmlFor="email">
-                    <input type="email" id="email" placeholder="Email pls"/>
+                <label htmlFor="email" aria-label="email">
+                    <input type="email" id="email" placeholder="Your Email" name="email" required />
                 </label>
-                <label htmlFor="employer-link">
-                    <input type="url" id="employer-link" placeholder="Your company's website(Optional)"/>
+                <label htmlFor="employer-link" aria-label="website link">
+                    <input type="url" id="employer-link" placeholder="Your company's website (Optional)" name="website" />
                 </label>
-                <label htmlFor="message">
-                    <textarea id="message" placeholder="Your message"></textarea>
+                <label htmlFor="message" aria-label="message">
+                    <textarea id="message" placeholder="Your message" name="message" required></textarea>
                 </label>
                 <button type="submit">Submit</button>
+                <input type="checkbox" name="botcheck" style={{display: "none"}} />
             </form>
+            <p role="status">{result}</p>
+            {/* style={{display: "none"}} */}
         </section>
     );
 }
