@@ -1,5 +1,5 @@
 import "./Skills.css";
-import { SiPython, SiJavascript, SiReact, SiHtml5, SiCss, SiGithub, SiPostman } from "react-icons/si";
+import { SiPython, SiJavascript, SiReact, SiHtml5, SiCss, SiGithub, SiPostman, SiLinux } from "react-icons/si";
 import { FaSlack } from "react-icons/fa";
 import { VscVscodeInsiders } from "react-icons/vsc";
 
@@ -22,8 +22,9 @@ function Skills(){
             <div className="skills-group-right">
                 <h4>Tools</h4>
                 <ul>
+                    <li><SiLinux />Linux</li>                    
                     <li><SiGithub />Github</li>
-                    <li><SiPostman />POSTMAN</li>
+                    <li><SiPostman />Postman</li>
                     <li><VscVscodeInsiders />VS Code</li>
                     <li><FaSlack />Slack</li>
                 </ul>
