@@ -15,7 +15,7 @@ function Navbar(){
    return(
       <nav className={scrolled ? "navbar scrolled" : "navbar"}>
          <div className="navbar-top">
-            <a href="/#hero" title="Home">Man_J_S_S</a>
+            <a href="/#hero" title="Home">ManJ_S</a>
       <button className="hamburger" aria-label="Toggle menu" onClick = {() => setIsOpen(!isOpen)}>☰</button>
          </div>
         <ul className={isOpen ? "nav-links open" : "nav-links"}>
