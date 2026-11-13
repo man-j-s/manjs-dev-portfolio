@@ -1,6 +1,11 @@
 .contact{
     padding: 80px 32px;
-    /* min-height: 70dvh; */
+}
+
+.contact-layout{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
 }
 
 .contact h2{
@@ -44,4 +49,10 @@
     background-color: #64ffda;
     color: #0a192f;
     box-shadow: 0 0 15px #64ffda;
+}
+
+@media (max-width: 1024px){
+    .contact-layout{
+        grid-template-columns: 1fr;
+    }
 }
