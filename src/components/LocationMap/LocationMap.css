@@ -1,0 +1,15 @@
+.location-map{
+    height: 150px;
+    width: 90%;
+    border: 2px solid #64ffda;
+}
+
+.zoom-map {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+}
+
+.zoom-map:hover{
+    color: #64ffda;
+}

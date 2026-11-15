@@ -13,8 +13,7 @@ function LocalTime(){
         const dateText = now.toLocaleDateString("en-CA", {timeZone: "America/Toronto", weekday: "long", month: "long", day: "numeric", year: "numeric"});
     return(
         <p>
-        <time dateTime={now.toISOString()}>{timeText}</time><br/>
-        {dateText}
+        <time className="localtime" dateTime={now.toISOString()}>Local Date and Time {dateText} {timeText}</time>
         </p>
     )
 }

@@ -1,6 +1,7 @@
 import "./Contact.css";
 import { useState } from "react";
 import LocalTime from "../LocalTime/LocalTime"; 
+import LocationMap from "../LocationMap/LocationMap";
 
 
 function Contact() {
@@ -29,6 +30,7 @@ function Contact() {
                 <aside>
                     <h3>Toronto, ON, Canada</h3>
                     <LocalTime />
+                    <LocationMap />
                 </aside>
                 <div>
                     <form onSubmit={handleSubmit}>
