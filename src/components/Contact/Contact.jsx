@@ -1,6 +1,6 @@
 import "./Contact.css";
 import { useState } from "react";
-import "./../LocalTime";
+import LocalTime from "../LocalTime/LocalTime"; 
 
 
 function Contact() {

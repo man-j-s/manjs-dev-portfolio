@@ -10,7 +10,7 @@ function LocalTime(){
         return() => clearInterval(id);
     }, []);
         const timeText = now.toLocaleTimeString("en-CA", {timeZone: "America/Toronto", hour: "numeric", minute:"2-digit", second:"2-digit"});
-        const dateText = now.toLocaleDateString("en-CA", {timeZone: "America/Toronto", weekday: "long", month: "long", day: "numeric"});
+        const dateText = now.toLocaleDateString("en-CA", {timeZone: "America/Toronto", weekday: "long", month: "long", day: "numeric", year: "numeric"});
     return(
         <p>
         <time dateTime={now.toISOString()}>{timeText}</time><br/>
